@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"noImplicitAny": false,
+		"sourceMap": true,
+		"outDir": "../dist/electron",
+		"baseUrl": ".",
+		"paths": {
+			"*": ["../node_modules/*"]
+		}
+	},
+	"include": ["**/*.ts"]
+}
