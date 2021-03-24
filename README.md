@@ -6,7 +6,7 @@
 
 <!-- all-shields/header-badges:END -->
 
-Create single page application with this friendly Svelte boilerplate made with typescript and love. Perfect for your web/pwa, electron or cordova project.
+Create a desktop app with this friendly Svelte boilerplate for electron
 
 ## 🎁 Support: Donate
 
@@ -35,9 +35,9 @@ Create single page application with this friendly Svelte boilerplate made with t
 ## 🔨 Developer Mode
 
 1. Clone this repository or download [nightly](https://github.com/ptkdev-boilerplate/svelte-electron-boilerplate/archive/nightly.zip), [beta](https://github.com/ptkdev-boilerplate/svelte-electron-boilerplate/archive/beta.zip) or [stable](https://github.com/ptkdev-boilerplate/svelte-electron-boilerplate/archive/main.zip).
-2. Copy and rename `config.js.tpl` file to `config.js` in `configs` folder and fill it properly.
-3. Run `npm install`
-4. Run `npm run dev`
+2. Run `npm install`
+3. Run `npm run dev`
+4. Run `npm run dev:electron`
 
 ## 📚 Documentation
 

@@ -7,7 +7,7 @@ function createWindow() {
 		height: 600,
 		webPreferences: {
 			preload: path.join(__dirname, "preload.js"),
-			contextIsolation: true
+			contextIsolation: true,
 		},
 		width: 800,
 	});
@@ -25,7 +25,7 @@ function createWindow() {
 app.on("ready", () => {
 	createWindow();
 
-	app.on("activate", function () {
+	app.on("activate", function() {
 		// On macOS it's common to re-create a window in the app when the
 		// dock icon is clicked and there are no other windows open.
 		if (BrowserWindow.getAllWindows().length === 0) {
