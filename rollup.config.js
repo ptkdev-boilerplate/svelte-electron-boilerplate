@@ -28,7 +28,7 @@ function serve() {
 			if (server) {
 				return;
 			}
-			server = spawn("npm", ["run", "start", "--", "--dev"], {
+			server = spawn("npm", ["run", "start", "--", "--dev", "--port", config.server.port], {
 				stdio: ["ignore", "inherit", "inherit"],
 				shell: true,
 			});
