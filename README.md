@@ -21,7 +21,7 @@ Create a desktop app with this friendly Svelte boilerplate for electron
 ## 📎 Menu
 
 -   💡 [Features](#-features)
--   🚀 [How to use](#-usage)
+-   🚀 [How to use](#-usage-deploy)
 -   👔 [Screenshot](#-screenshot)
 -   📚 [Documentation](#-documentation)
 -   🔨 [Developer Mode](#-developer-mode)
@@ -58,7 +58,7 @@ Create a desktop app with this friendly Svelte boilerplate for electron
 
 1. Clone this repository or download [nightly](https://github.com/ptkdev-boilerplate/svelte-electron-boilerplate/archive/nightly.zip), [beta](https://github.com/ptkdev-boilerplate/svelte-electron-boilerplate/archive/beta.zip) or [stable](https://github.com/ptkdev-boilerplate/svelte-electron-boilerplate/archive/main.zip).
 2. Run `npm install`
-3. For create desktop application insaller (exe, dmg or appImage) run:
+3. For create desktop application installer (exe, dmg or appImage) run:
 
 -   Windows: `npm run build-win` or `npm run build-win-32bit`
 -   Linux: `npm run build-lnx`
@@ -72,7 +72,6 @@ Create a desktop app with this friendly Svelte boilerplate for electron
 2. Run `npm install`
 3. Run `npm run dev`
 4. Run `npm run dev:electron`
-5. Run `http://localhost:5000`
 
 ## 📚 Documentation
 
