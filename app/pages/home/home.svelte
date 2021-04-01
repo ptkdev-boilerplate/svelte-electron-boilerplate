@@ -2,29 +2,29 @@
 	/**
 	 * Home HTML
 	 * =====================
-	 * Svelte Page
 	 *
 	 * @contributors: Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptk.dev)
 	 *
 	 * @license: MIT License
 	 *
 	 */
-	import Menu from "../../components/common/menu/menu.svelte";
-	import Footer from "../../components/common/footer/footer.svelte";
-	import List from "../../components/list/list.svelte";
-	import Login from "../../components/login/login.svelte";
-	import { login, logged, token } from "../../components/login/login";
-	let logged2 = false;
-	logged.subscribe((value) => (logged2 = value));
+	import Menu from "@components/common/menu/menu.svelte";
+	import Footer from "@components/common/footer/footer.svelte";
 </script>
 
 <Menu />
 
-{#if $token != null || logged2 == true}
-	<List />
-{:else}
-	<Login {login} />
-{/if}
+<div id="container">
+	<section class="hero is-medium is-primary is-bold">
+		<div class="hero-body">
+			<div class="container">
+				<h1 class="title">Hello World</h1>
+				<h2 class="subtitle">svelte-spa-boilerplaye</h2>
+			</div>
+		</div>
+	</section>
+	<div class="content has-text-centered">app/pages/home.svelte</div>
+</div>
 
 <Footer />
 

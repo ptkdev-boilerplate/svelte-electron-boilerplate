@@ -1,0 +1,68 @@
+/**
+ * Dark Mode SCSS
+ * =====================
+ *
+ * @contributors: Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptk.dev)
+ *
+ * @license: MIT License
+ *
+ */
+#app.darkmode {
+	color: white;
+	background: black;
+	background-color: black;
+
+	body::-webkit-scrollbar {
+		width: 0.4em;
+	}
+
+	body::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	}
+
+	body::-webkit-scrollbar-thumb {
+		background-color: rgb(51, 50, 50);
+		outline: 1px solid rgb(4, 6, 7);
+	}
+
+	.switch[type="checkbox"]:focus + label::after,
+	.switch[type="checkbox"]:focus + label::before,
+	.switch[type="checkbox"]:focus + label:after,
+	.switch[type="checkbox"]:focus + label:before {
+		outline: none;
+	}
+
+	a {
+		color: white;
+	}
+
+	.navbar,
+	.footer,
+	.navbar-dropdown,
+	.navbar-dropdown,
+	a.navbar-link,
+	a.navbar-item,
+	a.navbar-item:focus,
+	a.navbar-link:focus-within,
+	a.navbar-item:focus-within,
+	a.navbar-item.is-active,
+	.is-primary {
+		color: white;
+		background: black;
+		background-color: black;
+		background-image: none;
+	}
+
+	.navbar-link:focus,
+	a.navbar-item:hover,
+	a.navbar-link:focus,
+	a.navbar-link:hover {
+		background: darkslategray;
+		background-color: darkslategray;
+		background-image: none;
+	}
+
+	.hero.is-primary {
+		background-image: linear-gradient(141deg, black 0%, rgb(35, 59, 59) 50%, black 100%);
+	}
+}

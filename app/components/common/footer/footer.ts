@@ -1,7 +1,6 @@
 /**
- * Footer Common Component
+ * Footer Typescript
  * =====================
- * Svelte Component
  *
  * @contributors: Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptk.dev)
  *

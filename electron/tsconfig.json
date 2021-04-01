@@ -5,7 +5,8 @@
 		"sourceMap": true,
 		"outDir": "../dist/electron",
 		"baseUrl": ".",
+		"allowJs": true,
 		"moduleResolution": "node"
 	},
-	"include": ["**/*.ts"]
+	"include": ["**/*.ts", "../app/configs/config.js"]
 }

@@ -1,7 +1,7 @@
 /**
- * Check configs.js
+ * Disable debug
  * =====================
- * Check if configs/config.js exist, if don't exist rename .tpl
+ * Check if configs/config.js has debug to off
  *
  * @contributors: Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptk.dev)
  *
@@ -10,11 +10,16 @@
  */
 import * as fs from "fs";
 import * as shell from "shelljs";
+import { argv } from "yargs";
 
 declare const __dirname: string;
 
 const path = `${__dirname}/../app/configs/config.js`;
 
-if (!fs.existsSync(path)) {
-	shell.cp("-Rf", `${__dirname}/../app/configs/config.js.tpl`, path);
+if (fs.existsSync(path)) {
+	if (argv.enable) {
+		shell.sed("-i", '"debug": false', '"debug": true', path);
+	} else {
+		shell.sed("-i", '"debug": true', '"debug": false', path);
+	}
 }

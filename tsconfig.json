@@ -1,5 +1,29 @@
 {
+	"compilerOptions": {
+		"sourceMap": true,
+		"outDir": "./dist/",
+		"lib": ["es2017", "es7", "es6", "DOM"],
+		"baseUrl": ".",
+		"resolveJsonModule": true,
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"noImplicitAny": false,
+		"noImplicitThis": false,
+		"declaration": true,
+		"strict": false,
+		"skipLibCheck": true,
+		"allowJs": true,
+		"types": ["svelte", "jest", "shelljs"],
+		"paths": {
+			"@components/*": ["./app/components/*"],
+			"@translations/*": ["./app/translations/*"],
+			"@configs/*": ["./app/configs/*"],
+			"@app/*": ["./app/*"]
+		},
+		"typeRoots": ["app/**/types", "node_modules/@types"],
+		"plugins": [{ "transform": "typescript-transform-paths" }, { "transform": "typescript-transform-paths", "afterDeclarations": true }]
+	},
 	"extends": "@tsconfig/svelte/tsconfig.json",
-	"include": ["app/**/*", "configs/**/*", "translations/**/*"],
-	"exclude": ["node_modules/*", "__sapper__/*", "dist/*", "build/*"]
+	"include": ["app/**/*"],
+	"exclude": ["node_modules/*", "dist/*", "scripts/*", "electron/**/*"]
 }

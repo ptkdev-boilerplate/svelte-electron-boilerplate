@@ -85,6 +85,7 @@ Thumbs.db
 *.apk
 *.ap_
 *.dex
+bin/
 gen/
 .gradle/
 build/
@@ -120,11 +121,8 @@ npm-debug.log
 
 # App #
 #######
-config.js
-config/*.js
-configs/*.js
-config.ts
-config/*.ts
-configs/*.ts
+/app/configs/config.js
+/app/configs/config.ts
+/extra
 /dist
 /build

@@ -1,0 +1,43 @@
+/**
+ * Global SCSS
+ * =====================
+ * Style global code
+ *
+ * @contributors: Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptk.dev)
+ *
+ * @license: MIT License
+ *
+ */
+body::-webkit-scrollbar {
+	width: 0.4em;
+}
+
+body::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+	outline: 1px solid slategrey;
+}
+
+.switch[type="checkbox"]:focus + label::after,
+.switch[type="checkbox"]:focus + label::before,
+.switch[type="checkbox"]:focus + label:after,
+.switch[type="checkbox"]:focus + label:before {
+	outline: none;
+}
+
+#container {
+	min-height: calc(100vh - 220px);
+	flex: 1;
+}
+
+.switch[type="checkbox"] {
+	outline: 0;
+	user-select: none;
+}
+
+.hero {
+	margin-bottom: 2%;
+}

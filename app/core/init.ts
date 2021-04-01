@@ -8,7 +8,8 @@
  * @license: MIT License
  *
  */
-import App from "../pages/index/index.svelte";
+import App from "@app/pages/index/index.svelte";
+
 const app = new App({
 	target: document.body,
 });

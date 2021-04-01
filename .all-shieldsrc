@@ -266,19 +266,37 @@
 					"platform": "shields"
 				},
 				{
-					"url": "https://github.com/ptkdev-bot",
+					"url": "https://github.com/ptkdev-boilerplate?q=svelte",
 					"color": "#f368e0",
-					"label": "🤖 Boilerplate",
+					"label": "👔 Boilerplate",
+					"message": "Svelte",
+					"style": "flat",
+					"logo": "",
+					"platform": "shields"
+				},
+				{
+					"url": "https://github.com/ptkdev-boilerplate?q=webcomponent",
+					"color": "#f368e0",
+					"label": "👔 Boilerplate",
+					"message": "WebComponents",
+					"style": "flat",
+					"logo": "",
+					"platform": "shields"
+				},
+				{
+					"url": "https://github.com/ptkdev-boilerplate?q=bot",
+					"color": "#f368e0",
+					"label": "👔 Boilerplate",
 					"message": "BOT",
 					"style": "flat",
 					"logo": "",
 					"platform": "shields"
 				},
 				{
-					"url": "hhttps://github.com/ptkdev-boilerplate",
+					"url": "https://github.com/ptkdev-boilerplate?q=node",
 					"color": "#f368e0",
-					"label": "🦄 Boilerplate",
-					"message": "Website / App",
+					"label": "👔 Boilerplate",
+					"message": "Node",
 					"style": "flat",
 					"logo": "",
 					"platform": "shields"

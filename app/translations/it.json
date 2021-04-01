@@ -4,5 +4,6 @@
 		"license": "CC BY 4.0",
 		"contributors": ["Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptk.dev)"]
 	},
-	"app_name": "project-x"
+	"app_name": "svelte-electron-boilerplate",
+	"hello": "Ciao Mondo!"
 }

@@ -1,19 +1,25 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 import { app, BrowserWindow } from "electron";
 import * as path from "path";
+const config = require("../app/configs/config");
 
 function createWindow() {
 	// Create the browser window.
 	const mainWindow = new BrowserWindow({
-		height: 600,
+		height: 768,
 		webPreferences: {
 			preload: path.join(__dirname, "preload.js"),
 			contextIsolation: true,
 		},
-		width: 800,
+		width: 1024,
 	});
 
 	// and load the index.html of the app.
-	mainWindow.loadFile(path.join(__dirname, "../../dist/index.html"));
+	if (config.debug) {
+		mainWindow.loadURL(`http://localhost:${config.server.port}`);
+	} else {
+		mainWindow.loadFile(path.join(__dirname, "../../../dist/index.html"));
+	}
 
 	// Open the DevTools.
 	// mainWindow.webContents.openDevTools();
@@ -25,7 +31,7 @@ function createWindow() {
 app.on("ready", () => {
 	createWindow();
 
-	app.on("activate", function() {
+	app.on("activate", function () {
 		// On macOS it's common to re-create a window in the app when the
 		// dock icon is clicked and there are no other windows open.
 		if (BrowserWindow.getAllWindows().length === 0) {
