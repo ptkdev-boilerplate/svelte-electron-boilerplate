@@ -19,7 +19,7 @@
 		<div class="hero-body">
 			<div class="container">
 				<h1 class="title">Hello World</h1>
-				<h2 class="subtitle">svelte-spa-boilerplaye</h2>
+				<h2 class="subtitle">svelte-electron-boilerplate</h2>
 			</div>
 		</div>
 	</section>
