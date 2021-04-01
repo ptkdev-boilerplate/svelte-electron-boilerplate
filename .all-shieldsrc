@@ -47,6 +47,16 @@
 					"platform": "shields"
 				},
 				{
+					"url": "https://electronjs.org/",
+					"color": "#9feaf9",
+					"label": "powered by",
+					"message": "electron",
+					"title": "Powered By Electron",
+					"style": "flat",
+					"logo": "electron",
+					"platform": "shields"
+				},
+				{
 					"url": "https://www.typescriptlang.org/",
 					"color": "blue",
 					"label": "language",
