@@ -27,9 +27,9 @@
 	"scripts": {
 		"start": "sirv dist",
 		"start:electron": "electron ./dist/electron/electron/main.js",
-		"dev": "ts-node scripts/configs.ts && ts-node scripts/debug.ts --enable && rm -rf dist && rollup -c -w",
+		"dev": "ts-node scripts/configs.ts && ts-node scripts/debug.ts --enable && ts-node scripts/rmdist.ts && rollup -c -w",
 		"dev:electron": "tsc -p ./electron/tsconfig.json && electron ./dist/electron/electron/main.js",
-		"build:client": "ts-node scripts/configs.ts && ts-node scripts/debug.ts --disable && rm -rf dist && rollup -c",
+		"build:client": "ts-node scripts/configs.ts && ts-node scripts/debug.ts --disable && ts-node scripts/rmdist.ts && rollup -c",
 		"build:desktop": "tsc -p ./electron/tsconfig.json",
 		"build": "npm run build:client && npm run build:desktop && electron-builder",
 		"build-mac": "npm run build:client && npm run build:desktop && electron-builder --dir --mac dmg",
