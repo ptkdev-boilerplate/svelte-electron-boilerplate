@@ -9,7 +9,7 @@
 		"esModuleInterop": true,
 		"noImplicitAny": false,
 		"noImplicitThis": false,
-		"declaration": true,
+		"declaration": false,
 		"strict": false,
 		"skipLibCheck": true,
 		"allowJs": true,
