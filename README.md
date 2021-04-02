@@ -64,7 +64,7 @@ Create a desktop app with this friendly Svelte boilerplate for electron
 -   Linux: `npm run build-lnx`
 -   Mac: `npm run build-mac` (Only on Apple machine)
 
-...or try build all with: `nom run build`. Installers are available in `build` folder.
+...or try build all with: `npm run build`. Installers are available in `build` folder.
 
 ## 🔨 Developer Mode
 
