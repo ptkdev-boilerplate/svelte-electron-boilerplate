@@ -38,6 +38,7 @@
 		"build-win": "npm run build:client && npm run build:desktop && electron-builder --dir --win portable",
 		"build-win-32bit": "npm run build:client && npm run build:desktop && electron-builder --dir --win portable --ia32",
 		"build-lnx": "npm run build:client && npm run build:desktop && electron-builder --dir --linux appImage deb rpm",
+		"release": "npm run build:client && npm run build:desktop",
 		"test": "jest app",
 		"docs": "git submodule update --recursive && markserv ./README.md",
 		"lint": "npm run lint-prettify && eslint . --cache --ext .ts,.js",
