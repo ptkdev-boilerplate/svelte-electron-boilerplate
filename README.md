@@ -26,7 +26,7 @@ Create a desktop app with this friendly Svelte boilerplate for electron
 -   📚 [Documentation](#-documentation)
 -   🔨 [Developer Mode](#-developer-mode)
 -   -   ⚡ [Run Project](#-run-project)
--   -   ⚙️ [Setup Project](#-setup-project)
+-   -   💾 [Setup Project](#-setup-project)
 -   👨‍💻 [Contributing](#-contributing)
 -   🐛 [Known Bugs](https://github.com/ptkdev-boilerplate/svelte-electron-boilerplate/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
 -   🍻 Community:
@@ -70,14 +70,14 @@ Create a desktop app with this friendly Svelte boilerplate for electron
 
 ## 🔨 Developer Mode
 
-#### 🧑‍💻 Run Project
+#### 🏁 Run Project
 
 1. Clone this repository or download [nightly](https://github.com/ptkdev-boilerplate/svelte-electron-boilerplate/archive/nightly.zip), [beta](https://github.com/ptkdev-boilerplate/svelte-electron-boilerplate/archive/beta.zip) or [stable](https://github.com/ptkdev-boilerplate/svelte-electron-boilerplate/archive/main.zip).
 2. Run `npm run init`
 3. Run `npm run dev`
 4. Run `npm run dev:electron`
 
-#### ⚙️ Setup Project
+#### 💾 Setup Project
 
 If you want replace all strings (example: package name, author, urls, etc...) in markdown file, source files and others files of this project you need edit `setup.json` with correct values and run `npm run setup`.
 
