@@ -2,7 +2,7 @@
 	"name": "@ptkdev/svelte-electron-boilerplate",
 	"displayName": "Svelte Electron Boilerplate",
 	"description": "Create a desktop app with this friendly Svelte boilerplate for electron",
-	"version": "1.0.20210402",
+	"version": "1.0.20210404",
 	"main": "dist/electron/electron/main.js",
 	"publishConfig": {
 		"access": "public"
@@ -25,6 +25,8 @@
 		"node": ">=14.0.0"
 	},
 	"scripts": {
+		"init": "npm install && husky install",
+		"setup": "ts-node --skip-project scripts/setup.ts && ts-node --skip-project scripts/changelog.ts && npm run pre-commit",
 		"start": "sirv dist",
 		"start:electron": "electron ./dist/electron/electron/main.js",
 		"dev": "ts-node scripts/configs.ts && ts-node scripts/debug.ts --enable && ts-node scripts/rmdist.ts && rollup -c -w",
@@ -96,6 +98,7 @@
 		"postcss": "^8.2.9",
 		"postcss-load-config": "^3.0.1",
 		"prettier": "^2.2.1",
+		"replace-in-file": "^6.2.0",
 		"rollup": "^2.44.0",
 		"rollup-plugin-copy": "^3.4.0",
 		"rollup-plugin-css-only": "^3.1.0",
