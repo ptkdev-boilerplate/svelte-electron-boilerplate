@@ -1,3 +1,13 @@
+/**
+ * Preload
+ * =====================
+ *
+ * @contributors: Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptk.dev)
+ *
+ * @license: MIT License
+ *
+ */
+
 // All of the Node.js APIs are available in the preload process.
 // It has the same sandbox as a Chrome extension.
 window.addEventListener("DOMContentLoaded", () => {
