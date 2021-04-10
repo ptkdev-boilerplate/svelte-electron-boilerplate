@@ -93,7 +93,7 @@
 					"label": "donate",
 					"message": "paypal",
 					"title": "Donate Paypal",
-					"style": "flat",
+					"style": "for-the-badge",
 					"logo": "paypal",
 					"platform": "shields"
 				},
@@ -103,7 +103,7 @@
 					"label": "donate",
 					"message": "ko-fi",
 					"title": "Donate Ko-Fi",
-					"style": "flat",
+					"style": "for-the-badge",
 					"logo": "ko-fi",
 					"platform": "shields"
 				},
@@ -113,7 +113,7 @@
 					"label": "donate",
 					"message": "sponsors",
 					"title": "Donate Github Sponsors",
-					"style": "flat",
+					"style": "for-the-badge",
 					"logo": "github",
 					"platform": "shields"
 				},
@@ -123,27 +123,27 @@
 					"label": "donate",
 					"message": "patreon",
 					"title": "Donate Patreon",
-					"style": "flat",
+					"style": "for-the-badge",
 					"logo": "patreon",
 					"platform": "shields"
 				},
 				{
-					"url": "",
+					"url": "https://ptk.dev/img/icons/menu/bitcoin_wallet.png",
 					"color": "#E38B29",
-					"label": "donate",
+					"label": "BTC",
 					"message": "35jQmZCy4nsxoMM3QPFrnZePDVhdKaHMRH",
 					"title": "Donate Bitcoin",
-					"style": "flat",
+					"style": "flat-square",
 					"logo": "bitcoin",
 					"platform": "shields"
 				},
 				{
-					"url": "",
+					"url": "https://ptk.dev/img/icons/menu/ethereum_wallet.png",
 					"color": "#4E8EE9",
-					"label": "donate",
+					"label": "ETH",
 					"message": "0x8b8171661bEb032828e82baBb0B5B98Ba8fBEBFc",
 					"title": "Donate Ethereum",
-					"style": "flat",
+					"style": "flat-square",
 					"logo": "ethereum",
 					"platform": "shields"
 				}
