@@ -1,3 +1,11 @@
 {
-	"recommendations": ["svelte.svelte-vscode", "esbenp.prettier-vscode", "dbaeumer.vscode-eslint", "gruntfuggly.todo-tree", "nickdodd79.gulptasks"]
+	"recommendations": [
+		"ptkdev.dark-blood-theme",
+		"naumovs.color-highlight",
+		"svelte.svelte-vscode",
+		"esbenp.prettier-vscode",
+		"dbaeumer.vscode-eslint",
+		"gruntfuggly.todo-tree",
+		"nickdodd79.gulptasks"
+	]
 }
