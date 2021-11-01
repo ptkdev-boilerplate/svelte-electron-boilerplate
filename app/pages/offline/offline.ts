@@ -7,4 +7,4 @@
  * @license: MIT License
  *
  */
-export { };
+export {};

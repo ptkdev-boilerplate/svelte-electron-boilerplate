@@ -18,14 +18,14 @@ let darkmode = false;
  *
  */
 const darkModeToggle = (): boolean => {
-	if (document.querySelector("html").classList.contains("darkmode")) {
+	if (document.querySelector("html")?.classList.contains("darkmode")) {
 		darkmode = false;
 	} else {
 		darkmode = true;
 	}
 
-	document.querySelector("html").classList.toggle("darkmode");
-	document.querySelector("body").classList.toggle("darkmode");
+	document.querySelector("html")?.classList.toggle("darkmode");
+	document.querySelector("body")?.classList.toggle("darkmode");
 
 	window.localStorage.setItem("darkmode", darkmode ? "enabled" : "disabled");
 
@@ -41,10 +41,14 @@ const darkModeToggle = (): boolean => {
  *
  */
 const darkModeDetect = (): boolean => {
-	if (window.localStorage.getItem("darkmode") === "enabled" || (window.localStorage.getItem("darkmode") === undefined && window?.matchMedia("(prefers-color-scheme: dark)").matches)) {
-		if (!document.querySelector("html").classList.contains("darkmode")) {
-			document.querySelector("html").classList.add("darkmode");
-			document.querySelector("body").classList.add("darkmode");
+	if (
+		window.localStorage.getItem("darkmode") === "enabled" ||
+		(window.localStorage.getItem("darkmode") === undefined &&
+			window?.matchMedia("(prefers-color-scheme: dark)").matches)
+	) {
+		if (!document.querySelector("html")?.classList.contains("darkmode")) {
+			document.querySelector("html")?.classList.add("darkmode");
+			document.querySelector("body")?.classList.add("darkmode");
 		}
 
 		return true;
