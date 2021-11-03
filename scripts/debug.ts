@@ -10,9 +10,13 @@
  */
 import * as fs from "fs";
 import * as shell from "shelljs";
-import { argv } from "yargs";
+import * as yargs from "yargs";
 
 declare const __dirname: string;
+
+const argv: any = yargs.options({
+	enable: { type: "boolean" },
+}).argv;
 
 const path = `${__dirname}/../app/configs/config.js`;
 
