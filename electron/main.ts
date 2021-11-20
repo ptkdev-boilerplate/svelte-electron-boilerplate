@@ -24,7 +24,7 @@ function createWindow() {
 	});
 
 	if (config.debug) {
-		mainWindow.loadURL(`http://localhost.test:${config.server.port}`);
+		mainWindow.loadURL(`http://localhost:${config.server.port}`);
 		mainWindow.webContents.openDevTools();
 	} else {
 		mainWindow.loadFile(path.join(__dirname, "../../../dist/index.html"));
