@@ -32,7 +32,7 @@
 		"dev:electron": "tsc -p ./electron/tsconfig.json && electron ./dist/electron/electron/main.js",
 		"build:client": "ts-node scripts/configs.ts && ts-node scripts/rmdist.ts && ts-node scripts/debug.ts --disable && rollup -c",
 		"build:desktop": "tsc -p ./electron/tsconfig.json",
-		"release": " ts-node scripts/rmdist.ts && npm run build:client && npm run build:desktop && electron-builder --dir --linux --win --mac",
+		"release": " ts-node scripts/rmdist.ts && npm run build:client && npm run build:desktop && electron-builder --dir",
 		"build-mac": " ts-node scripts/rmdist.ts && npm run build:client && npm run build:desktop && electron-builder --dir --mac dmg",
 		"build-win": " ts-node scripts/rmdist.ts && npm run build:client && npm run build:desktop && electron-builder --dir --win portable",
 		"build-win-32bit": " ts-node scripts/rmdist.ts && npm run build:client && npm run build:desktop && electron-builder --dir --win portable --ia32",
