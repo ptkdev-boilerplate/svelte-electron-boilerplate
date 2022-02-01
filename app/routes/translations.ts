@@ -11,4 +11,11 @@
 import en from "@translations/en.json";
 import it from "@translations/it.json";
 
-export default { en, it };
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const translations: any = {
+	en,
+	it,
+};
+
+export { it, en };
+export default translations;

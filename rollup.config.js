@@ -15,7 +15,7 @@ import { spawn } from "child_process";
 
 const config = require("./app/configs/config");
 const tsconfig = require("./tsconfig.json");
-
+config.debug = config.debug === "enabled" ? true : false;
 const production = !config.debug;
 
 function serve() {

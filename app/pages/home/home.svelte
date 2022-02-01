@@ -10,6 +10,7 @@
 	 */
 	import Menu from "@components/common/menu/menu.svelte";
 	import Footer from "@components/common/footer/footer.svelte";
+	import { translate } from "@app/translations/translate";
 </script>
 
 <Menu />
@@ -18,8 +19,8 @@
 	<section class="hero is-medium is-primary is-bold">
 		<div class="hero-body">
 			<div class="container">
-				<h1 class="title">Hello World</h1>
-				<h2 class="subtitle">svelte-electron-boilerplate</h2>
+				<h1 class="title">{translate("hello_world")}</h1>
+				<h2 class="subtitle">{translate("app_name")}</h2>
 			</div>
 		</div>
 	</section>

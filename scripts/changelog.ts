@@ -10,7 +10,7 @@
  */
 import * as fs from "fs";
 
-declare const __dirname;
+declare const __dirname: string;
 
 const changelog = `# v1.0.0 (${new Date().toLocaleString("en-us", { month: "long", year: "numeric", day: "numeric" })})
 

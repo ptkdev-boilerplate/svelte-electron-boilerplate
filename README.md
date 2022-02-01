@@ -2,11 +2,11 @@
 
 <!-- all-shields/header-badges:START -->
 
-[![v1.0.20211120](https://img.shields.io/badge/version-v1.0.20211120-lightgray.svg?style=flat&logo=)](https://github.com/ptkdev-boilerplate/svelte-electron-boilerplate/blob/main/CHANGELOG.md) [![](https://img.shields.io/npm/v/@ptkdev/svelte-electron-boilerplate?color=CC3534&logo=npm)](https://www.npmjs.com/package/@ptkdev/svelte-electron-boilerplate) [![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat&logo=license)](https://github.com/ptkdev-boilerplate/svelte-electron-boilerplate/blob/main/LICENSE.md) [![Powered By Svelte](https://img.shields.io/badge/powered%20by-svelte-FF3C02.svg?style=flat&logo=svelte)](https://svelte.dev/) [![Powered By Electron](https://img.shields.io/badge/powered%20by-electron-9feaf9.svg?style=flat&logo=electron)](https://electronjs.org/) [![Language: TypeScript](https://img.shields.io/badge/language-typescript-blue.svg?style=flat&logo=typescript)](https://www.typescriptlang.org/) [![ECMAScript: 2019](https://img.shields.io/badge/ES-9-F7DF1E.svg?style=flat&logo=javascript)](https://github.com/tc39/ecma262) [![Discord Server](https://discordapp.com/api/guilds/383373985666301975/embed.png)](https://discord.ptkdev.io)
+[![v2.0.0-nightly.0](https://img.shields.io/badge/version-v2.0.0--nightly.0-lightgray.svg?style=flat&logo=)](https://github.com/ptkdev-boilerplate/svelte-electron-boilerplate/blob/main/CHANGELOG.md) [![](https://img.shields.io/npm/v/@ptkdev/svelte-electron-boilerplate?color=CC3534&logo=npm)](https://www.npmjs.com/package/@ptkdev/svelte-electron-boilerplate) [![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat&logo=license)](https://github.com/ptkdev-boilerplate/svelte-electron-boilerplate/blob/main/LICENSE.md) [![Powered By Svelte](https://img.shields.io/badge/powered%20by-svelte-FF3C02.svg?style=flat&logo=svelte)](https://svelte.dev/) [![Powered By Electron](https://img.shields.io/badge/powered%20by-electron-9feaf9.svg?style=flat&logo=electron)](https://electronjs.org/) [![Language: TypeScript](https://img.shields.io/badge/language-typescript-blue.svg?style=flat&logo=typescript)](https://www.typescriptlang.org/) [![ECMAScript: 2019](https://img.shields.io/badge/ES-9-F7DF1E.svg?style=flat&logo=javascript)](https://github.com/tc39/ecma262) [![Discord Server](https://discordapp.com/api/guilds/383373985666301975/embed.png)](https://discord.ptkdev.io)
 
 <!-- all-shields/header-badges:END -->
 
-Create a desktop app with this friendly Svelte boilerplate for electron
+Create a desktop app with this user friendly Svelte boilerplate for electron
 
 This is a [github template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/), you can fork it or [use as template](https://github.com/ptkdev-boilerplate/svelte-electron-boilerplate/generate) for start new project with this repository as hello-world. I hate start new project with empty template, often i missing correct configuration, readme instruction or i need of samples of code. Use this repository as template solve this problem.
 
@@ -48,13 +48,13 @@ This is a [github template](https://github.blog/2019-06-06-generate-new-reposito
 -   [✔️] Powered by svelte framework
 -   [✔️] Without jQuery depencence
 -   [✔️] Typescript + TSPaths preconfigured
--   [✔️] Userfriendly folders tree
+-   [✔️] User friendly folders tree
 -   [✔️] Prettiers and ESLint preconfigured
 -   [✔️] all-contributors-cli and all-shields-cli preconfigured
 -   [✔️] JEST Test preconfigured
 -   [✔️] Full async code
 -   [✔️] Github and Vscode dotfiles preconfigured
--   [✔️] Translations i18n: 🇬🇧 🇮🇹 🇵🇱 (Help me ❤️)
+-   [✔️] Translations i18n (Help me ❤️)
 
 ## 👔 Screenshot
 
@@ -65,7 +65,7 @@ This is a [github template](https://github.blog/2019-06-06-generate-new-reposito
 #### 🏁 Run Project
 
 1. Clone this repository or download [nightly](https://github.com/ptkdev-boilerplate/svelte-electron-boilerplate/archive/nightly.zip), [beta](https://github.com/ptkdev-boilerplate/svelte-electron-boilerplate/archive/beta.zip) or [stable](https://github.com/ptkdev-boilerplate/svelte-electron-boilerplate/archive/main.zip).
-2. Run `npm run init`
+2. Run `npm install`
 3. Run `npm run dev`
 4. Run `npm run dev:electron`
 
@@ -81,7 +81,7 @@ For create desktop application installer (exe, dmg or appImage) run:
 -   Linux: `npm run build-lnx`
 -   Mac: `npm run build-mac` (Only on Apple machine)
 
-...or try build all with: `npm run build`. Installers are available in `build` folder.
+...or try build all with: `npm run release`. Installers are available in `build` folder.
 
 ## 📚 Documentation
 
@@ -95,7 +95,7 @@ Thanks to all our backers! 🙏 Donate 3$ or more on [paypal](https://www.paypal
 
 ## 👨‍💻 Contributing
 
-I ❤️ contributions! I will happily accept your pull request! Translations, grammatical corrections (GrammarNazi you are welcome! Yes my English is bad, sorry), etc... Do not be afraid, if the code is not perfect we will work together 👯 and remember to insert your name in `.all-contributorsrc` and `package.json` file.
+I ❤️ contributions! I will happily accept your pull request! (**IMPORTANT**: Only to nightly branch!) Translations, grammatical corrections (GrammarNazi you are welcome! Yes my English is bad, sorry), etc... Do not be afraid, if the code is not perfect we will work together 👯 and remember to insert your name in `.all-contributorsrc` and `package.json` file.
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
@@ -131,13 +131,13 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- all-shields/projects-badges3:START -->
 
-[![](https://img.shields.io/badge/%F0%9F%93%B8%20WebComponent-Instagram%20Widget-e74c3c.svg?style=flat&logo=)](https://github.com/ptkdev-components/webcomponent-instagram-widget) [![](https://img.shields.io/badge/%F0%9F%91%91%20WebComponent-My%20Patreon%20Box-e74c3c.svg?style=flat&logo=)](https://github.com/ptkdev-components/webcomponent-patreon-box) [![](https://img.shields.io/badge/%F0%9F%8F%9E%20WebComponent-Carousel%20Slideshow-e74c3c.svg?style=flat&logo=)](https://github.com/ptkdev-components/webcomponent-carousel-slideshow)
+[![](https://img.shields.io/badge/%F0%9F%9A%A7%20WebComponents-My%20Collection-e74c3c.svg?style=flat&logo=)](https://github.com/ptkdev-components) [![](https://img.shields.io/badge/%F0%9F%94%96%20Bot-AboutMeInfo-1FA0F2.svg?style=flat&logo=)](https://github.com/ptkdev/aboutmeinfo-telegram-bot) [![](https://img.shields.io/badge/%E2%8F%B1%20Bot-QuizQuickAnswer-FEC91A.svg?style=flat&logo=)](https://github.com/ptkdev/quizquickanswer-telegram-game-bot) [![](https://img.shields.io/badge/%F0%9F%93%9A%20Bot-GameBookChat-34495e.svg?style=flat&logo=)](https://t.me/gamebookchatbot) [![](https://img.shields.io/badge/%F0%9F%8E%A8%20Themes-VSCode-f1c40f.svg?style=flat&logo=)](https://github.com/ptkdev/vscode-theme-dark-blood) [![](https://img.shields.io/badge/%F0%9F%97%84%20Sourcesense-Joyce-CECBE6.svg?style=flat&logo=)](https://github.com/sourcesense/joyce)
 
 <!-- all-shields/projects-badges3:END -->
 
 <!-- all-shields/projects-badges4:START -->
 
-[![](https://img.shields.io/badge/%F0%9F%8E%A8%20Themes-VSCode-f1c40f.svg?style=flat&logo=)](https://github.com/ptkdev/vscode-theme-dark-blood) [![](https://img.shields.io/badge/%F0%9F%93%9A%20Bot-GameBookChat-34495e.svg?style=flat&logo=)](https://t.me/gamebookchatbot) [![](https://img.shields.io/badge/%F0%9F%91%94%20Boilerplate-Svelte-f368e0.svg?style=flat&logo=)](https://github.com/ptkdev-boilerplate?q=svelte) [![](https://img.shields.io/badge/%F0%9F%91%94%20Boilerplate-WebComponents-f368e0.svg?style=flat&logo=)](https://github.com/ptkdev-boilerplate?q=webcomponent) [![](https://img.shields.io/badge/%F0%9F%91%94%20Boilerplate-BOT-f368e0.svg?style=flat&logo=)](https://github.com/ptkdev-boilerplate?q=bot) [![](https://img.shields.io/badge/%F0%9F%91%94%20Boilerplate-Node-f368e0.svg?style=flat&logo=)](https://github.com/ptkdev-boilerplate?q=node) [![](https://img.shields.io/badge/%F0%9F%92%85%20App-Me%20in%20Gifs-2ecc71.svg?style=flat&logo=)](https://meingifs.pics/) [![](https://img.shields.io/badge/%F0%9F%93%B1%20App-Stickers-2ecc71.svg?style=flat&logo=)](https://github.com/ptkdev/ptkdev-stickers#-install-free)
+[![](https://img.shields.io/badge/%F0%9F%91%94%20Boilerplate-Svelte-f368e0.svg?style=flat&logo=)](https://github.com/ptkdev-boilerplate?q=svelte) [![](https://img.shields.io/badge/%F0%9F%91%94%20Boilerplate-WebComponents-f368e0.svg?style=flat&logo=)](https://github.com/ptkdev-boilerplate?q=webcomponent) [![](https://img.shields.io/badge/%F0%9F%91%94%20Boilerplate-BOT-f368e0.svg?style=flat&logo=)](https://github.com/ptkdev-boilerplate?q=bot) [![](https://img.shields.io/badge/%F0%9F%91%94%20Boilerplate-Node-f368e0.svg?style=flat&logo=)](https://github.com/ptkdev-boilerplate?q=node) [![](https://img.shields.io/badge/%F0%9F%92%85%20App-Me%20in%20Gifs-2ecc71.svg?style=flat&logo=)](https://meingifs.pics/) [![](https://img.shields.io/badge/%F0%9F%93%B1%20App-Stickers-2ecc71.svg?style=flat&logo=)](https://github.com/ptkdev/ptkdev-stickers#-installation)
 
 <!-- all-shields/projects-badges4:END -->
 

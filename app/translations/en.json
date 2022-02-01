@@ -5,5 +5,13 @@
 		"contributors": ["Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptk.dev)"]
 	},
 	"app_name": "svelte-electron-boilerplate",
-	"hello": "Hello World!"
+	"hello_world": "Hello World!",
+	"error404_notfound": "Not Found!",
+	"error404_message": "Oops, this route doesn't exist!",
+	"offline_title": "Offline!",
+	"offline_message": "You are offline!",
+	"wildcard_title": "Wildcard!",
+	"wildcard_message": "Anything in the URL after <code>/wild/</code> is shown below as message. That's found in the <code>params.wild</code> prop.",
+	"wildcard_current": "Your message is: {{param}}",
+	"footer_license": "The source code is licensed"
 }

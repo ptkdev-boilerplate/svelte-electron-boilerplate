@@ -10,6 +10,7 @@
 	 */
 	import Menu from "@components/common/menu/menu.svelte";
 	import Footer from "@components/common/footer/footer.svelte";
+	import { translate } from "@app/translations/translate";
 </script>
 
 <Menu />
@@ -18,12 +19,12 @@
 	<section class="hero is-medium is-primary is-bold">
 		<div class="hero-body">
 			<div class="container">
-				<h1 class="title">Not Found!</h1>
+				<h1 class="title">{translate("error404_notfound")}</h1>
 			</div>
 		</div>
 	</section>
 	<div class="content has-text-centered">
-		<p>Oops, this route doesn't exist!</p>
+		<p>{translate("error404_message")}</p>
 	</div>
 </div>
 

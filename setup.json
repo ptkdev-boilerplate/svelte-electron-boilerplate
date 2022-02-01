@@ -2,7 +2,7 @@
 	"package_name": "svelte-electron-boilerplate",
 	"package_org": "@ptkdev",
 	"display_name": "Svelte Electron Boilerplate",
-	"description": "Create a desktop app with this friendly Svelte boilerplate for electron",
+	"description": "Create a desktop app with this user friendly Svelte boilerplate for electron",
 	"author": "Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptk.dev)",
 	"author_markdown": "[Patryk Rzucidło](https://ptk.dev) ([@PTKDev](https://twitter.com/ptkdev)) <[support@ptkdev.io](mailto:support@ptkdev.io)>",
 	"author_url": "https://ptk.dev",

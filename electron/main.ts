@@ -15,19 +15,19 @@ const config = require("../app/configs/config");
 
 function createWindow() {
 	const mainWindow = new BrowserWindow({
+		width: 1024,
 		height: 768,
 		webPreferences: {
 			preload: path.join(__dirname, "preload.js"),
 			contextIsolation: true,
 		},
-		width: 1024,
 	});
 
-	if (config.debug) {
+	if (config.debug === "enabled") {
 		mainWindow.loadURL(`http://localhost:${config.server.port}`);
 		mainWindow.webContents.openDevTools();
 	} else {
-		mainWindow.loadFile(path.join(__dirname, "../../../dist/index.html"));
+		mainWindow.loadFile(path.join(__dirname, "../../index.html"));
 	}
 }
 

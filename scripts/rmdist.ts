@@ -10,6 +10,8 @@
 import * as shell from "shelljs";
 declare const __dirname: string;
 
-const path = `${__dirname}/../dist`;
+const path_dist = `${__dirname}/../dist`;
+const path_build = `${__dirname}/../build`;
 
-shell.rm("-Rf", path);
+shell.rm("-Rf", path_dist);
+shell.rm("-Rf", path_build);

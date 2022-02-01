@@ -5,5 +5,13 @@
 		"contributors": ["Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptk.dev)"]
 	},
 	"app_name": "svelte-electron-boilerplate",
-	"hello": "Ciao Mondo!"
+	"hello_world": "Ciao Mondo!",
+	"error404_notfound": "Non trovata!",
+	"error404_message": "Oops, questo url non esiste!",
+	"offline_title": "Offline!",
+	"offline_message": "Sei offline!",
+	"wildcard_title": "Carta jolly!",
+	"wildcard_message": "Qualsiasi valore dopo <code>/wild/</code> sarà mostrato come messaggio. È disponibile nella proprietà <code>params.wild</code>.",
+	"wildcard_current": "Il messaggio è: {{param}}",
+	"footer_license": "Il codice sorgente è sotto licenza"
 }

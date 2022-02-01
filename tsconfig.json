@@ -1,5 +1,6 @@
 {
 	"compilerOptions": {
+		"target": "es2017",
 		"sourceMap": true,
 		"outDir": "./dist/",
 		"lib": ["es2017", "es7", "es6", "DOM"],
@@ -10,16 +11,20 @@
 		"noImplicitAny": true,
 		"noImplicitThis": true,
 		"declaration": false,
+		"skipLibCheck": true,
 		"allowJs": true,
 		"strict": true,
 		"strictNullChecks": true,
 		"strictFunctionTypes": true,
 		"forceConsistentCasingInFileNames": true,
-		"types": ["svelte", "jest", "shelljs"],
+		"importsNotUsedAsValues": "error",
+		"preserveValueImports": true,
+		"isolatedModules": true,
+		"types": ["svelte", "jest", "nunjucks", "node"],
 		"paths": {
-			"@components/*": ["./app/components/*"],
 			"@translations/*": ["./app/translations/*"],
 			"@configs/*": ["./app/configs/*"],
+			"@components/*": ["./app/components/*"],
 			"@app/*": ["./app/*"]
 		},
 		"typeRoots": ["app/**/types", "node_modules/@types"],
@@ -28,7 +33,6 @@
 			{ "transform": "typescript-transform-paths", "afterDeclarations": true }
 		]
 	},
-	"extends": "@tsconfig/svelte/tsconfig.json",
 	"include": ["app/**/*"],
-	"exclude": ["node_modules/*", "dist/*", "scripts/*", "electron/**/*"]
+	"exclude": ["node_modules/*", "dist/*", "scripts/*", "examples/*", "electron/**/*"]
 }

@@ -1,0 +1,29 @@
+name: Release Nightly
+on:
+    schedule:
+        - cron: "30 23 * * *"
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        if: "!startsWith(github.event.head_commit.message, '[🚀 Release Nightly]')"
+        steps:
+            - uses: actions/checkout@v2
+              with:
+                  token: ${{ secrets.GIT_TOKEN }}
+                  ref: nightly
+            - uses: actions/setup-node@v2
+              with:
+                  node-version: "16.x"
+                  registry-url: "https://registry.npmjs.org"
+            - run: git config --global user.name 'Patryk Rzucidlo (@PTKDev)'
+            - run: git config --global user.email 'support@ptkdev.io'
+            - run: npm ci
+            - run: npm run github-workflow-next-version -- --cmd nightly
+            - run: npm run release
+            - run: npm run pre-commit
+            - id: pkgjson
+              run: chmod +x ./scripts/version.sh && ./scripts/version.sh
+            - run: git add . && git commit -m "[🚀 Release Nightly] v${{ steps.pkgjson.outputs.pkgversion }}" && git push
+            - run: npm publish --tag nightly
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -11,6 +11,7 @@
 	 */
 	import Menu from "@components/common/menu/menu.svelte";
 	import Footer from "@components/common/footer/footer.svelte";
+	import { translate } from "@app/translations/translate";
 
 	export let params = { wild: "" };
 </script>
@@ -21,16 +22,16 @@
 	<section class="hero is-medium is-primary is-bold">
 		<div class="hero-body">
 			<div class="container">
-				<h1 class="title">Wildcard!</h1>
+				<h1 class="title">{translate("wildcard_title")}</h1>
 			</div>
 		</div>
 	</section>
 	<div class="content has-text-centered">
 		<p>
-			Anything in the URL after <code>/wild/</code> is shown below as message. That's found in the <code>params.wild</code> prop.
+			{@html translate("wildcard_message")}
 		</p>
 
-		<p>Your message is: {params.wild}</p>
+		<p>{translate("wildcard_current", { param: params.wild })}</p>
 	</div>
 </div>
 

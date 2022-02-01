@@ -226,42 +226,28 @@
 			"id": "projects-badges3",
 			"badges": [
 				{
-					"url": "https://github.com/ptkdev-components/webcomponent-instagram-widget",
+					"url": "https://github.com/ptkdev-components",
 					"color": "#e74c3c",
-					"label": "📸 WebComponent",
-					"message": "Instagram Widget",
+					"label": "🚧 WebComponents",
+					"message": "My Collection",
 					"style": "flat",
 					"logo": "",
 					"platform": "shields"
 				},
 				{
-					"url": "https://github.com/ptkdev-components/webcomponent-patreon-box",
-					"color": "#e74c3c",
-					"label": "👑 WebComponent",
-					"message": "My Patreon Box",
+					"url": "https://github.com/ptkdev/aboutmeinfo-telegram-bot",
+					"color": "#1FA0F2",
+					"label": "🔖 Bot",
+					"message": "AboutMeInfo",
 					"style": "flat",
 					"logo": "",
 					"platform": "shields"
 				},
 				{
-					"url": "https://github.com/ptkdev-components/webcomponent-carousel-slideshow",
-					"color": "#e74c3c",
-					"label": "🏞 WebComponent",
-					"message": "Carousel Slideshow",
-					"style": "flat",
-					"logo": "",
-					"platform": "shields"
-				}
-			]
-		},
-		{
-			"id": "projects-badges4",
-			"badges": [
-				{
-					"url": "https://github.com/ptkdev/vscode-theme-dark-blood",
-					"color": "#f1c40f",
-					"label": "🎨 Themes",
-					"message": "VSCode",
+					"url": "https://github.com/ptkdev/quizquickanswer-telegram-game-bot",
+					"color": "#FEC91A",
+					"label": "⏱ Bot",
+					"message": "QuizQuickAnswer",
 					"style": "flat",
 					"logo": "",
 					"platform": "shields"
@@ -275,6 +261,29 @@
 					"logo": "",
 					"platform": "shields"
 				},
+				{
+					"url": "https://github.com/ptkdev/vscode-theme-dark-blood",
+					"color": "#f1c40f",
+					"label": "🎨 Themes",
+					"message": "VSCode",
+					"style": "flat",
+					"logo": "",
+					"platform": "shields"
+				},
+				{
+					"url": "https://github.com/sourcesense/joyce",
+					"color": "#CECBE6",
+					"label": "🗄 Sourcesense",
+					"message": "Joyce",
+					"style": "flat",
+					"logo": "",
+					"platform": "shields"
+				}
+			]
+		},
+		{
+			"id": "projects-badges4",
+			"badges": [
 				{
 					"url": "https://github.com/ptkdev-boilerplate?q=svelte",
 					"color": "#f368e0",
@@ -321,7 +330,7 @@
 					"platform": "shields"
 				},
 				{
-					"url": "https://github.com/ptkdev/ptkdev-stickers#-install-free",
+					"url": "https://github.com/ptkdev/ptkdev-stickers#-installation",
 					"color": "#2ecc71",
 					"label": "📱 App",
 					"message": "Stickers",

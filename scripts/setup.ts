@@ -11,10 +11,12 @@
  * @license: MIT License
  *
  */
-import * as shell from "shelljs";
+import Logger from "@ptkdev/logger";
 const replace = require("replace-in-file");
 const setup = require("../setup.json");
 const pkg = require("../package.json");
+
+const logger = new Logger();
 
 (async () => {
 	try {
@@ -25,7 +27,7 @@ const pkg = require("../package.json");
 			to: setup.github_full_repository_url,
 		});
 	} catch (error) {
-		console.error("Error occurred:", error);
+		logger.error(JSON.stringify(error));
 	}
 
 	try {
@@ -36,7 +38,7 @@ const pkg = require("../package.json");
 			to: setup.github_full_repository_url,
 		});
 	} catch (error) {
-		console.error("Error occurred:", error);
+		logger.error(JSON.stringify(error));
 	}
 
 	try {
@@ -47,7 +49,7 @@ const pkg = require("../package.json");
 			to: setup.github_repository_url.replace("github.com", "githubusercontent.com"),
 		});
 	} catch (error) {
-		console.error("Error occurred:", error);
+		logger.error(JSON.stringify(error));
 	}
 
 	try {
@@ -58,7 +60,7 @@ const pkg = require("../package.json");
 			to: setup.github_repository_url.replace("github.com", "githubusercontent.com"),
 		});
 	} catch (error) {
-		console.error("Error occurred:", error);
+		logger.error(JSON.stringify(error));
 	}
 
 	try {
@@ -69,7 +71,7 @@ const pkg = require("../package.json");
 			to: setup.github_repository_url,
 		});
 	} catch (error) {
-		console.error("Error occurred:", error);
+		logger.error(JSON.stringify(error));
 	}
 
 	try {
@@ -80,7 +82,7 @@ const pkg = require("../package.json");
 			to: setup.github_repository_url,
 		});
 	} catch (error) {
-		console.error("Error occurred:", error);
+		logger.error(JSON.stringify(error));
 	}
 
 	try {
@@ -91,7 +93,7 @@ const pkg = require("../package.json");
 			to: setup.package_org !== "" ? `${setup.package_org}/${setup.package_name}` : setup.package_name,
 		});
 	} catch (error) {
-		console.error("Error occurred:", error);
+		logger.error(JSON.stringify(error));
 	}
 
 	try {
@@ -102,18 +104,18 @@ const pkg = require("../package.json");
 			to: setup.display_name,
 		});
 	} catch (error) {
-		console.error("Error occurred:", error);
+		logger.error(JSON.stringify(error));
 	}
 
 	try {
 		await replace({
 			files: ["**/*", ".*", "**/.*"],
 			ignore: ["node_modules/**/*", "setup.json", "package-lock.json", "scripts/setup.ts", ".all-contributorsrc"],
-			from: /Create your telegram bot with this friendly boilerplate. Use this respository as template for your bot/g,
+			from: /Create your telegram bot with this user friendly boilerplate. Use this respository as template for your bot/g,
 			to: setup.description,
 		});
 	} catch (error) {
-		console.error("Error occurred:", error);
+		logger.error(JSON.stringify(error));
 	}
 
 	try {
@@ -124,7 +126,7 @@ const pkg = require("../package.json");
 			to: setup.author,
 		});
 	} catch (error) {
-		console.error("Error occurred:", error);
+		logger.error(JSON.stringify(error));
 	}
 
 	try {
@@ -135,7 +137,7 @@ const pkg = require("../package.json");
 			to: setup.author_markdown,
 		});
 	} catch (error) {
-		console.error("Error occurred:", error);
+		logger.error(JSON.stringify(error));
 	}
 
 	try {
@@ -146,7 +148,7 @@ const pkg = require("../package.json");
 			to: `"projectName": "${setup.github_full_repository_url.replace("github.com/", "")}"`,
 		});
 	} catch (error) {
-		console.error("Error occurred:", error);
+		logger.error(JSON.stringify(error));
 	}
 
 	try {
@@ -157,7 +159,7 @@ const pkg = require("../package.json");
 			to: `"projectOwner": "${setup.github_nickname}"`,
 		});
 	} catch (error) {
-		console.error("Error occurred:", error);
+		logger.error(JSON.stringify(error));
 	}
 
 	try {
@@ -168,7 +170,7 @@ const pkg = require("../package.json");
 			to: setup.github_nickname,
 		});
 	} catch (error) {
-		console.error("Error occurred:", error);
+		logger.error(JSON.stringify(error));
 	}
 
 	try {
@@ -179,7 +181,7 @@ const pkg = require("../package.json");
 			to: setup.package_name.replace(setup.package_org),
 		});
 	} catch (error) {
-		console.error("Error occurred:", error);
+		logger.error(JSON.stringify(error));
 	}
 
 	try {
@@ -190,7 +192,7 @@ const pkg = require("../package.json");
 			to: setup.email,
 		});
 	} catch (error) {
-		console.error("Error occurred:", error);
+		logger.error(JSON.stringify(error));
 	}
 
 	try {
@@ -201,6 +203,6 @@ const pkg = require("../package.json");
 			to: "1.0.0",
 		});
 	} catch (error) {
-		console.error("Error occurred:", error);
+		logger.error(JSON.stringify(error));
 	}
 })();
