@@ -12,7 +12,7 @@
 	import "./menu.ts";
 </script>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar" aria-label="main navigation">
 	<div class="navbar-brand">
 		<a href="#/" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-basic">
 			<span aria-hidden="true" />

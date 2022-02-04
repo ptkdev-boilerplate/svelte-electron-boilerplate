@@ -30,13 +30,13 @@
 		"start:electron": "electron ./dist/electron/electron/main.js",
 		"dev": "npm run git-hash && ts-node scripts/configs.ts && ts-node scripts/debug.ts --enable && rollup -c -w",
 		"dev:electron": "tsc -p ./electron/tsconfig.json && electron ./dist/electron/electron/main.js",
-		"build:client": "ts-node scripts/configs.ts && ts-node scripts/rmdist.ts && ts-node scripts/debug.ts --disable && rollup -c",
+		"build:client": "ts-node scripts/configs.ts && ts-node scripts/debug.ts --disable && rollup -c",
 		"build:desktop": "tsc -p ./electron/tsconfig.json",
-		"release": " ts-node scripts/rmdist.ts && npm run build:client && npm run build:desktop && electron-builder --dir",
-		"build-mac": " ts-node scripts/rmdist.ts && npm run build:client && npm run build:desktop && electron-builder --dir --mac dmg",
-		"build-win": " ts-node scripts/rmdist.ts && npm run build:client && npm run build:desktop && electron-builder --dir --win portable",
-		"build-win-32bit": " ts-node scripts/rmdist.ts && npm run build:client && npm run build:desktop && electron-builder --dir --win portable --ia32",
-		"build-lnx": " ts-node scripts/rmdist.ts && npm run build:client && npm run build:desktop && electron-builder --dir --linux appImage deb rpm",
+		"release": "ts-node scripts/rmdist.ts && npm run build:client && npm run build:desktop && electron-builder --dir",
+		"build-mac": "npm run build:client && npm run build:desktop && electron-builder --dir --mac dmg --x64 --arm64",
+		"build-win": "npm run build:client && npm run build:desktop && electron-builder --dir --win portable --x64 --ia32 --arm64",
+		"build-lnx": "npm run build:client && npm run build:desktop && electron-builder --dir --linux deb rpm appImage pacman --x64 --ia32 --arm64",
+		"build-all": "ts-node scripts/rmdist.ts && npm run build-mac && npm run build-win && npm run build-lnx",
 		"test": "jest app",
 		"docs": "git submodule update --recursive && markserv ./README.md",
 		"lint": "npm run lint-prettify && eslint . --cache --ext .ts,.js",
@@ -132,9 +132,11 @@
 			"dist"
 		],
 		"win": {
+			"artifactName": "${productName}-${version}-win_${arch}.${ext}",
 			"icon": "assets/icon.png"
 		},
 		"mac": {
+			"artifactName": "${productName}-${version}-mac_${arch}.${ext}",
 			"icon": "assets/icon.png",
 			"category": "public.app-category.network"
 		},
@@ -143,29 +145,11 @@
 			"allowToChangeInstallationDirectory": true,
 			"createDesktopShortcut": true
 		},
-		"dmg": {
-			"contents": [
-				{
-					"x": 110,
-					"y": 150
-				},
-				{
-					"x": 240,
-					"y": 150,
-					"type": "link",
-					"path": "/Applications"
-				}
-			]
-		},
 		"linux": {
+			"artifactName": "${productName}-${version}-linux_${arch}.${ext}",
+			"executableName": "svelte-electron-boilerplate",
 			"icon": "assets/icon.png",
-			"category": "Network",
-			"target": [
-				"deb",
-				"pacman",
-				"tar.gz",
-				"AppImage"
-			]
+			"category": "Network"
 		}
 	},
 	"keywords": [

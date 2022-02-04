@@ -77,7 +77,7 @@ If you want replace all strings (example: package name, author, urls, etc...) in
 
 For create desktop application installer (exe, dmg or appImage) run:
 
--   Windows: `npm run build-win` or `npm run build-win-32bit`
+-   Windows: `npm run build-win`
 -   Linux: `npm run build-lnx`
 -   Mac: `npm run build-mac` (Only on Apple machine)
 
