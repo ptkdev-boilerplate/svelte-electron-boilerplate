@@ -55,9 +55,9 @@
 		"contributors-generate": "all-contributors generate",
 		"all-shields-generate": "all-shields-generate",
 		"pre-commit": "npm run contributors-generate && npm run all-shields-generate && npm run lint-fix && npm run test",
-		"pkg-clean": "rm -rf node_modules package-lock.json && npm install && husky install",
+		"pkg-clean": "rm -rf node_modules package-lock.json && npm install && npm install eslint@7 @types/yargs@16 --save-dev && husky install",
 		"pkg-update": "npm update",
-		"pkg-upgrade": "npx --yes npm-check-updates -u && npm install && husky install",
+		"pkg-upgrade": "npx --yes npm-check-updates -u && npm install && npm install eslint@7 @types/yargs@16 --save-dev && husky install",
 		"prepare": "ts-patch install -s && husky install"
 	},
 	"dependencies": {

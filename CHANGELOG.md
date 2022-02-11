@@ -1,6 +1,7 @@
 # v2.0.1 (TBD)
 
 -   Fix: Build system
+-   Refactor: CI/CD now update the version of the package to the latest (nightly)
 
 <!-- all-shields/sponsors-badges:START -->
 

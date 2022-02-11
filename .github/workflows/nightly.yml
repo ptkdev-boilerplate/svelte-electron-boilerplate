@@ -19,6 +19,7 @@ jobs:
             - run: git config --global user.email 'support@ptkdev.io'
             - run: npm ci
             - run: npm run github-workflow-next-version -- --cmd nightly
+            - run: npm run pkg-upgrade
             - run: npm run release
             - run: npm run pre-commit
             - id: pkgjson
