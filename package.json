@@ -2,7 +2,7 @@
 	"name": "@ptkdev/svelte-electron-boilerplate",
 	"displayName": "Svelte Electron Boilerplate",
 	"description": "Create a desktop app with this user friendly Svelte boilerplate for electron",
-	"version": "2.0.1-nightly.345",
+	"version": "2.0.1-nightly.346",
 	"main": "dist/electron/electron/main.js",
 	"publishConfig": {
 		"access": "public"
